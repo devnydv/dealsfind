@@ -4,9 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DealsFind: Your Ultimate Destination for Exclusive Deals</title>
+  <title>DealsFind: Your Ultimate Destination for Exclusive Deals and Offers</title>
   <meta name="description"
-    content="Simplify your deal-hunting experience with DealsFind – the ultimate destination for all deals and offers on a single, user-friendly page. No more navigating through countless websites. Your one-stop-shop for savings is just a click away!">
+    content="Simplify your deal-hunting experience with DealsFind – the ultimate destination for all deals and offers on a single, user-friendly page. No more navigating through countless websites or pages. Your one-stop-shop for savings is just a click away!">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="top.css">
   <link rel="shortcut icon" href="assets/icon.svg" type="image/x-icon">
@@ -22,29 +22,21 @@
       </a>
       <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
         <a href="#amazon" class="mr-5 hover:text-gray-900">Amazon</a>
-        <a href="" class="mr-5 hover:text-gray-900">Ajio</a>
+        <a href="#ajio" class="mr-5 hover:text-gray-900">Ajio</a>
         <a href="" class="mr-5 hover:text-gray-900">Flipkart</a>
         <a href="" class="mr-5 hover:text-gray-900">Myntra</a>
       </nav>
-      <!-- <button
-        class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Button
-        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-          class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-          <path d="M5 12h14M12 5l7 7-7 7"></path>
-        </svg>
-      </button> -->
+
     </div>
   </header>
   <!-- <section class="text-gray-600 body-font"> -->
   <section class="text-gray-400 bg-gray-800 body-font">
     <!-- .......amazon deals...................... -->
-    <div class="container px-5 py-24 mx-auto">
+    <div class="container px-5 py-24 mx-auto ">
       <div class="flex flex-col text-center w-full mb-20">
         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Discover All Deals and Offers in One Place with DealsFind</h1>
 
-        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Say goodbye to the hassle of navigating multiple websites
-          and endless pages for deals. Welcome to our single-page website, DealsFind, where all the best deals and
-          offers are curated in one place. Explore and choose the deals that suit you best effortlessly.</p>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Say goodbye to the hassle of navigating multiple websites and endless pages for deals. Welcome to our single-page website, DealsFind, where all the best deals and offers are curated in one place. Explore and choose the deals that suit you best effortlessly.</p>
 
       </div>
 
@@ -52,9 +44,12 @@
       <div id="amazon" class="flex flex-col text-center w-full mb-20">
         <h2 class="text-lg text-indigo-400 tracking-widest font-medium title-font mb-1">Best amazon Deals and offers
         </h2>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Amazon is one of the most popular ecommerce website that
+          offers wide range of products. It also brings a lot of deals and offers time to time for its users. Sometimes
+          offers more than 90% off on some products. Shopping with amazon can be a great experience.</p>
       </div>
       <h3 class="text-lg text-indigo-300 tracking-widest font-medium title-font mb-1">Mens wear</h3>
-      <div class="flex flex-wrap -m-5">
+      <div class="flex flex-wrap -m-5 mb-20">
 
         <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 p-4 w-full">
           <a id="ama-tshirt-link" class="block relative h-47 rounded overflow-hidden" href="https://amzn.clnk.in/ixJ7">
@@ -90,9 +85,126 @@
               Link</button>
           </div>
         </div>
+
+        <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 p-4 w-full">
+          <a id="ama-inner-link" class="block relative h-47 rounded overflow-hidden" href="https://amzn.clnk.in/ixSs">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="assets/inner.png">
+
+            <div class="mt-4">
+              <h4 class="text-white title-font text-lg font-medium">Innerwear</h4>
+              <p class="text-gray-400 text-xs tracking-widest title-font mb-1">MENS TOP WEAR</p>
+              <p class="mt-1">Starting price: ₹69.</p>
+            </div>
+          </a>
+          <div class="flex justify-center">
+            <button id="ama-inner" onclick="copy(this)"
+              class="inline-flex text-white bg-indigo-700 border-2 py-2 px-4 my-2 focus:outline-none hover:bg-indigo-600 rounded text-md">Copy
+              Link</button>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 p-4 w-full">
+          <a id="ama-ethnic-link" class="block relative h-47 rounded overflow-hidden" href="https://amzn.clnk.in/ixSX">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="assets/ethnic.png">
+
+            <div class="mt-4">
+              <h4 class="text-white title-font text-lg font-medium">Ethnic Wear</h4>
+              <p class="text-gray-400 text-xs tracking-widest title-font mb-1">MENS TOP WEAR</p>
+              <p class="mt-1">Starting price: ₹69.</p>
+            </div>
+          </a>
+          <div class="flex justify-center">
+            <button id="ama-ethnic" onclick="copy(this)"
+              class="inline-flex text-white bg-indigo-700 border-2 py-2 px-4 my-2 focus:outline-none hover:bg-indigo-600 rounded text-md">Copy
+              Link</button>
+          </div>
+        </div>
+      </div>
+      <!-- aji0 deals........................ -->
+
+      <div id="ajio" class="flex flex-col text-center w-full mb-20">
+        <h2 class="text-lg text-indigo-400 tracking-widest font-medium title-font mb-1 ">Amazing Deals and offers from Ajio
+        </h2>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Ajio is one of the best websites that offers a wide range of products, ranging from innerwear to home decor items. The products are of the highest quality, and the products are value for money. The deals and offers that they offer are quite interesting and useful.</p>
+      </div>
+      <h3 class="text-lg text-indigo-300 tracking-widest font-medium title-font mb-1">Mens wear</h3>
+      <div class="flex flex-wrap -m-5 mb-20">
+
+
+        <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 p-4 w-full">
+          <a id="ajio-shirt-link" class="block relative h-47 rounded overflow-hidden" href="https://clnk.in/t44x">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="assets/shirt.png">
+
+            <div class="mt-4">
+              <h4 class="text-white title-font text-lg font-medium">Shirts</h4>
+              <p class="text-gray-400 text-xs tracking-widest title-font mb-1">MENS TOP WEAR</p>
+              <p class="mt-1">Starting price: ₹139.</p>
+            </div>
+          </a>
+          <div class="flex justify-center">
+            <button id="ajio-shirt" onclick="copy(this)"
+              class="inline-flex text-white bg-indigo-700 border-2 py-2 px-4 my-2 focus:outline-none hover:bg-indigo-600 rounded text-md">Copy
+              Link</button>
+          </div>
+        </div>
+
         
+        <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 p-4 w-full">
+          <a id="ajio-tshirt-link" class="block relative h-47 rounded overflow-hidden" href="https://clnk.in/t43E">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="assets/tshirt.png">
+
+            <div class="mt-4">
+              <h4 class="text-white title-font text-lg font-medium">T-shirts</h4>
+              <p class="text-gray-400 text-xs tracking-widest title-font mb-1">MENS TOP WEAR</p>
+              <p class="mt-1">Starting price: ₹89.</p>
+
+            </div>
+          </a>
+          <div class="flex justify-center">
+            <button id="ajio-tshirt" onclick="copy(this)"
+              class="inline-flex text-white bg-indigo-700 border-2 py-2 px-4 my-2 focus:outline-none hover:bg-indigo-600 rounded text-md">Copy
+              Link</button>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 p-4 w-full">
+          <a id="ajio-inner-link" class="block relative h-47 rounded overflow-hidden" href="https://clnk.in/t44x">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="assets/inner.png">
+
+            <div class="mt-4">
+              <h4 class="text-white title-font text-lg font-medium">Innerwear</h4>
+              <p class="text-gray-400 text-xs tracking-widest title-font mb-1">MENS TOP WEAR</p>
+              <p class="mt-1">Starting price: ₹79.</p>
+            </div>
+          </a>
+          <div class="flex justify-center">
+            <button id="ajio-inner" onclick="copy(this)"
+              class="inline-flex text-white bg-indigo-700 border-2 py-2 px-4 my-2 focus:outline-none hover:bg-indigo-600 rounded text-md">Copy
+              Link</button>
+          </div>
+        </div>
+
+        <div class="lg:w-1/4 md:w-1/3 sm:w-1/2 p-4 w-full">
+          <a id="ajio-ethnic-link" class="block relative h-47 rounded overflow-hidden" href="https://clnk.in/t44J">
+            <img alt="ecommerce" class="object-cover object-center w-full h-full block" src="assets/ethnic.png">
+
+            <div class="mt-4">
+              <h4 class="text-white title-font text-lg font-medium">Ethnic Wear</h4>
+              <p class="text-gray-400 text-xs tracking-widest title-font mb-1">MENS TOP WEAR</p>
+              <p class="mt-1">Starting price: ₹119.</p>
+            </div>
+          </a>
+          <div class="flex justify-center">
+            <button id="ajio-ethnic" onclick="copy(this)"
+              class="inline-flex text-white bg-indigo-700 border-2 py-2 px-4 my-2 focus:outline-none hover:bg-indigo-600 rounded text-md">Copy
+              Link</button>
+          </div>
+        </div>
+      </div>
 
 
+
+    </div>
 
   </section>
 
@@ -102,8 +214,10 @@
         <img src="assets/icon.svg" width="50px" height="50px" alt="site icon">
         <span class="ml-3 text-xl">DealsFind</span>
       </a>
-      <p class="text-sm text-gray-800 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024 DealsFind —
-        <a href="https://facebook.com/lowoncost" class="text-gray-800 ml-1" rel="noopener noreferrer" target="_blank">@Lowoncost</a>
+      <p class="text-sm text-gray-800 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2024
+        DealsFind —
+        <a href="https://facebook.com/lowoncost" class="text-gray-800 ml-1" rel="noopener noreferrer"
+          target="_blank">@Lowoncost</a>
       </p>
       <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
         <!-- <a class="text-gray-500" href="https://facebook.com/lowoncost">
