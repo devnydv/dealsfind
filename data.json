@@ -1,0 +1,113 @@
+{
+    "id1": {
+        "Best Deals on Kitchen Appliances": [
+            {
+                "title": "Microwave Ovens",
+                "prc": "From Rs. 5999",
+                "img": "https://rukminim1.flixcart.com/flap/240/240/image/0f46b1ccbe7d0620.jpg?q=90"
+            },
+            {
+                "title": "Oven Toaster Grills",
+                "prc": "From Rs. 4599",
+                "img": "https://rukminim1.flixcart.com/flap/240/240/image/d3d04a6c6ca21475.jpg?q=90"
+            },
+            {
+                "title": "Electric Kettle",
+                "prc": "From Rs. 7999",
+                "img": "https://rukminim1.flixcart.com/flap/240/240/image/f40c586fa2ac65af.jpg?q=90"
+            },
+            {
+                "title": "Hand Blenders",
+                "prc": "From Rs. 5,999",
+                "img": "https://rukminim1.flixcart.com/flap/240/240/image/aded412f9993539a.jpg?q=90"
+            },
+            {
+                "title": "Pop Up Toasters",
+                "prc": "From Rs. 6,999",
+                "img": "https://rukminim1.flixcart.com/image/312/312/krtjgcw0/mobile/s/8/9/smart-5a-x657c-infinix-original-imag5gnzeygmt9fh.jpeg?q=10"
+            },
+            {
+                "title": "Coffee Makers",
+                "prc": "From Rs. 7,999",
+                "img": "https://rukminim1.flixcart.com/image/312/312/kb1470w0/mobile/z/x/j/oppo-a12-cph2083-original-imafsh2hmjbxtvxy.jpeg?q=20"
+            },
+            {
+                "title": "Chimneys",
+                "prc": "From Rs. 45,999",
+                "img": "https://rukminim1.flixcart.com/image/416/416/k0lbdzk0pkrrdj/mobile/s/p/d/apple-iphone-xr-mry42hn-a-original-imafbhyw3tzdysun.jpeg?q=20"
+            },
+            {
+                "title": "Sandwich Makers",
+                "prc": "From Rs. 7,999",
+                "img": "https://rukminim1.flixcart.com/image/312/312/k2jbyq80pkrrdj/mobile-refurbished/j/g/f/y90-16-c-1908-vivo-2-original-imafjbswdrerjk7a.jpeg?q=20"
+            }
+        ],
+        "Best Deals on Earphone": [
+            {
+                "title": "Wired Earphones",
+                "prc": "From Rs. 99",
+                "img": "https://rukminim1.flixcart.com/image/612/612/ktaeqvk0/headphone/y/r/5/4-core-stereo-extra-bass-xs-1-metallic-in-ear-earphone-with-mic-original-imag6nvyzvydghwy.jpeg?q=10"
+            },
+            {
+                "title": "Neckband",
+                "prc": "From Rs. 199",
+                "img": "https://rukminim1.flixcart.com/image/612/612/kkvhea80/headphone/k/s/l/rockerz-255f-pro-rockerz-255-pro-boat-original-imagy42wmmtzjbve.jpeg?q=10"
+            },
+            {
+                "title": "Airpods",
+                "prc": "From Rs. 599",
+                "img": "https://rukminim1.flixcart.com/image/612/612/kk1h5e80/headphone/k/o/8/rma2003-realme-original-imafzh4g9cmfefgm.jpeg?q=10"
+            },
+            {
+                "title": "Headset",
+                "prc": "From Rs. 599",
+                "img": "https://rukminim1.flixcart.com/image/612/612/koq33ww0/headphone/0/z/s/gaming-headset-inari-hd-sound-50mm-speaker-retractable-mike-original-imag34dp3gnshckb.jpeg?q=20"
+            },
+            {
+                "title": "Tws",
+                "prc": "From Rs. 299",
+                "img": "https://rukminim1.flixcart.com/image/832/832/ku5ufm80/headphone/4/d/t/led-display-tws-earbuds-royalrich-original-imag7cgdq4sfzymc.jpeg?q=10"
+            },
+            {
+                "title": "Wired Headphones",
+                "prc": "From Rs. 399",
+                "img": "https://rukminim1.flixcart.com/image/750/750/l27wtjk0/headphone/n/l/z/-original-imagdm83tckkzsek.jpeg?q=20"
+            }
+        ],
+        "Best Deals on Accessories": [
+            
+            
+            {
+                "title": "Power Bank",
+                "prc": "From Rs. 199",
+                "img": "https://res.cloudinary.com/dqmlkqhwx/image/upload/c_scale,w_200/v1631891989/indexpage/powerbank.jpg"
+            },
+            {
+                "title": "Data Cable",
+                "prc": "From Rs. 99",
+                "img": "https://res.cloudinary.com/dqmlkqhwx/image/upload/c_scale,h_250,w_200/v1631892512/indexpage/datac.jpg"
+            },
+            {
+                "title": "Chargers",
+                "prc": "From Rs. 149",
+                "img": "https://res.cloudinary.com/dqmlkqhwx/image/upload/c_scale,h_250,w_200/v1631892716/indexpage/charger.jpg"
+            },
+            
+            {
+                "title": "Mouse",
+                "prc": "From Rs. 49",
+                "img": "https://rukminim1.flixcart.com/image/612/612/knrsjgw0/screen-guard/edge-to-edge-tempered-glass/h/z/9/motog60-kih-clr-05-hobbytronics-original-imag2dhjvw3gmjuz.jpeg?q=10"
+            },
+            {
+                "title": "Keyboard",
+                "prc": "From Rs. 999",
+                "img": "https://rukminim1.flixcart.com/image/312/312/k4bms280/external-hard-drive/hdd/q/2/a/wd-wdbyft0040bbk-original-imafmey87zxtvxen.jpeg?q=10"
+            },
+            {
+                "title": "Hair Dryers",
+                "prc": "From Rs. 999",
+                "img": "https://rukminim1.flixcart.com/image/312/312/k4bms280/external-hard-drive/hdd/q/2/a/wd-wdbyft0040bbk-original-imafmey87zxtvxen.jpeg?q=10"
+            }
+        ]
+    }
+}
