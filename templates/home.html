@@ -1,0 +1,46 @@
+{%extends "index.html" %}
+{%block seo %}
+
+
+<title>{{cate | title}}</title>
+{% endblock %}
+
+{%block content %}
+
+{% include "nav.html" %}
+<p>{{cate | title}}</p>
+<div id="smain">
+    {% include "sidebar.html" %}
+    <div id="main">
+        <div id="head">
+            <h1> Best Deal on {{cate | title}}</h1>
+        </div>
+        {%for item in itemdata %}
+        
+        <div class="ndiv">
+            <div class="img">
+                <img src="{{item['thumbnails']}}" alt="{{item['name']}}" loading="lazy">
+            </div>
+            <div class="details">
+                <h2>{{item['name'] | title}}</h2>
+                <p class="price">Price: {{item['current_price']}} </p>
+                <p class="mrp"><s>MRP:{{item['original_price']}}</s></p>
+                <p class="mrp">Discount: {{item['discount_percent']}}%</p>
+                <p class="rat">{{item['rating']}}</p>
+                <button class="but">
+                    {%set cateparam = cate.replace(" ", "-")%}
+                    <a href="details?id={{loop.index0}}&category={{cateparam}}"
+                        title="Details of {{item['name'] | title}}">
+                        View Full Details
+                    </a>
+                </button>
+            </div>
+
+        </div>
+        
+        {% endfor %}
+        
+
+    </div>
+</div>
+{% endblock %}
