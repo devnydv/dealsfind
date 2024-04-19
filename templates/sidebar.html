@@ -1,0 +1,14 @@
+<div id="titl">
+    <div class="about">
+        {% for val in data%}
+        <h3>{{val}}</h3>
+        {%for allval in data[val]%}
+        {% set avalue = allval["title"].replace(" ", "-")%}
+        <a href="/?title={{avalue | lower}}" title={{avalue}}>
+            <p>{{allval.title}}</p>
+        </a>
+        {% endfor%}
+        {% endfor%}
+
+    </div>
+</div>
