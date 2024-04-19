@@ -12,8 +12,6 @@
 <div id="smain">
     {% include "sidebar.html" %}
     <div id="main">
-        
-{{item}}
 
 
 
@@ -24,8 +22,8 @@
             </div>
             <div class="details">
                 <h1>{{item["name"]}}</h1>
-                <p class="price">Price: {{item['current_price']}}</p>
-                <p class="mrp">MRP:{{item['original_price']}}</p>
+                <p class="price">Price: ₹{{item['current_price']}}</p>
+                <p class="mrp"><s>MRP: ₹{{item['original_price']}}</s></p>
                 <p class="mrp">Discount: {{item['discount_percent']}}%</p>
                 <p class="rat">{{item['rating']}}</p>
                 <button class="but">
@@ -39,16 +37,13 @@
         </div>
         <div class="spec">
             <h2>Pros and cons:</h2>
-            <h3>General:</h3>
-            <p>Brand:ALAMPAR;Model Number:htc 1210;Type:Corded &amp; Cordless;Blade Material:Stainless Steel;Body
-                Material:Plastic;Color:Blue;Trimming Range:0.5 - 8 mm;Water Resistant:Yes;Washable
-                Head:Yes;Features:Adjustable Trimming Range;Suitable For:Hair Clipping;Charging Time:30 min;Length
-                Adjustments:4;</p>
-            <h3>Power Features:</h3>
-            <p>Power Requirement:battery;Power Source:Battery;Power Consumption:5 W;Batteries Included:Yes;Battery Run
-                Time:60 min;</p>
-            <h3>Warranty:</h3>
-            <p>Warranty Summary:2 Years warranty;</p>
+            {%for details in item["specs"]%}
+            
+            <h3>{{details["title"]}}</h3>
+            <p>{{details["details"]}}</p>
+            {% endfor %}
+            
+            
         </div>
 
 
