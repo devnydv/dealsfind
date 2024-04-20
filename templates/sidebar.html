@@ -4,7 +4,7 @@
         <h3>{{val}}</h3>
         {%for allval in data[val]%}
         {% set avalue = allval["title"].replace(" ", "-")%}
-        <a href="/?title={{avalue | lower}}" title={{avalue}}>
+        <a href="/?category={{avalue | lower}}" title={{avalue}}>
             <p>{{allval.title}}</p>
         </a>
         {% endfor%}
