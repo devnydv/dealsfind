@@ -10,7 +10,7 @@ def getfirebase(cate, id):
     titarray = []
     for file, val in itemdata.items():
         titarray.append(file)
-    titarray.reverse()
+    #titarray.reverse()
     id = int(id)
     title = titarray[id]
     itemdata = itemdata[title]
