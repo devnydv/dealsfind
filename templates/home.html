@@ -2,7 +2,15 @@
 {%block seo %}
 
 
-<title>{{cate | title}}</title>
+<title>Grab the Best deals on {{cate | title}}</title>
+<meta name="description" content="Top selected Best Deals on Electronics for the users to buy online. These are selected according to there specifications and user experiences. {{cate | title}}">
+<meta content="index,follow" name="robots">
+<meta content="all" name="robots">
+<meta content="en" name="language">
+<meta content="IN" name="country">
+<meta name="Keywords" content="Best Deals on Top Mobile Brands, Deals, flipkart deals, all flipkart product, online deals, deals on mobiles, deals on earphones, laptops, Gaming_Laptops, DSLR, Printers, Inks, Back_Cases">
+
+
 {% endblock %}
 
 {%block content %}
@@ -15,21 +23,31 @@
         <div id="head">
             <h1> Best Deal on {{cate | title}}</h1>
         </div>
+        {%set datalen = itemdata | length%}
+        {% set datalen = datalen - 1 %}
         {%for item in itemdata %}
-        
+        {%set index =  datalen- loop.index0 %}
         <div class="ndiv">
             <div class="img">
                 <img src="{{item['thumbnails']}}" alt="{{item['name']}}" loading="lazy">
             </div>
             <div class="details">
                 <h2>{{item['name'] | title}}</h2>
-                <p class="price">Price: {{item['current_price']}} </p>
-                <p class="mrp"><s>MRP:{{item['original_price']}}</s></p>
+                <p class="price">Price: ₹{{item['current_price']}} </p>
+                <p class="mrp"><s>MRP: ₹{{item['original_price']}}</s></p>
                 <p class="mrp">Discount: {{item['discount_percent']}}%</p>
                 <p class="rat">{{item['rating']}}</p>
                 <button class="but">
+                    
+                    {%set buyurl = item['share_url'] +"?&affid=inf_eda32f80-54f3-4e98-965b-0749dbdd2c8d"  %}
+                    <a href="{{buyurl}}"
+                        title="Buy the Product">
+                        Buy Now
+                    </a>
+                </button>
+                <button class="but">
                     {%set cateparam = cate.replace(" ", "-")%}
-                    <a href="details?id={{loop.index0}}&category={{cateparam}}"
+                    <a href="details?category={{cateparam}}&id={{index}}"
                         title="Details of {{item['name'] | title}}">
                         View Full Details
                     </a>
