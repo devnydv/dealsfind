@@ -12,7 +12,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello_world():
     
-    cate = request.args.get("title")
+    cate = request.args.get("category")
     if cate == None:
         cate = "electronics"
         
