@@ -2,7 +2,11 @@
 
 {%extends "index.html" %}
 {%block seo %}
-<title>{{item['name']}}</title>
+<title>Details of {{item['name']}}</title>
+<meta name="description" content="Complete details of the product {{item['name']}}">
+<meta property="og:title" content="Buy {{item['name']}}" />
+<meta property="og:description" content="Check details of {{item['name']}}" />
+<meta property="og:image" content="{{item['thumbnails'][0]}}" />
 {% endblock %}
 
 {%block content %}
@@ -17,8 +21,7 @@
 
         <div class="ndiv">
             <div class="img">
-                <img src="{{item['thumbnails'][0]}}"
-                    alt="{{item['name']}}">
+                <img src="{{item['thumbnails'][0]}}" alt="{{item['name']}}">
             </div>
             <div class="details">
                 <h1>{{item["name"]}}</h1>
@@ -27,10 +30,9 @@
                 <p class="mrp">Discount: {{item['discount_percent']}}%</p>
                 <p class="rat">{{item['rating']}}</p>
                 <button class="but">
-                    {%set buyurl = item['share_url'] +"?&affid=inf_eda32f80-54f3-4e98-965b-0749dbdd2c8d"  %}
-                    
-                    <a href="{{buyurl}}"
-                        target="blank_">Buy Now</a>
+                    {%set buyurl = item['share_url'] +"?&affid=inf_eda32f80-54f3-4e98-965b-0749dbdd2c8d" %}
+
+                    <a href="{{buyurl}}" title="Buy Now" target="blank_">Buy Now</a>
 
                 </button>
             </div>
@@ -38,12 +40,12 @@
         <div class="spec">
             <h2>Pros and cons:</h2>
             {%for details in item["specs"]%}
-            
+
             <h3>{{details["title"]}}</h3>
             <p>{{details["details"]}}</p>
             {% endfor %}
-            
-            
+
+
         </div>
 
 
