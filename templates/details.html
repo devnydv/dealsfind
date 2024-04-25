@@ -2,7 +2,8 @@
 
 {%extends "index.html" %}
 {%block seo %}
-<title>Details of {{item['name']}}</title>
+{%set title = item['name']%}
+<title>Details of {{ title[:50] }}</title>
 <meta name="description" content="Complete details of the product {{item['name']}}">
 <meta property="og:title" content="Buy {{item['name']}}" />
 <meta property="og:description" content="Check details of {{item['name']}}" />
