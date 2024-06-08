@@ -36,7 +36,10 @@ def detail():
     #print(itemdata)
     return render_template("details.html", data = menudata, id=id, cate= cate, itemdata = itemdata)
 
-
+@app.route("/api")
+def api():
+    hit()
+    return "api hit succ"
 
 #if __name__ == "__main__":
     #app.run(debug=True)
