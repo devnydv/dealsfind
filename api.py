@@ -5,7 +5,7 @@ cat = ["all", "science", "sports", "entertainment", "technology"]
 def hit():
     for category in cat:
         savingdata(category)
-        return "save ho gya data tumhara"
+        
 
 def savingdata(category):
     
