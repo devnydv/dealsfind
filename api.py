@@ -40,7 +40,7 @@ def savingdata(category):
             saved = requests.put(saveurl, json=x)
             originaldDtaSize =originaldDtaSize + 1
             print(originaldDtaSize)
-        return "data likh diya hai ..."
+        
         
             
             
