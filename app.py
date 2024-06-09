@@ -3,6 +3,8 @@ import os
 import json
 from hitapi import hitfirebase
 from getdetails import getfirebase
+from api import hit
+
 f = open("data.json", "r")
 menudata= f.read()
 menudata = json.loads(menudata)
