@@ -36,7 +36,7 @@ def savingdata(category):
         return "data save krne ki koi jarurat nhi hai"
     else:
         for x in datatodb:
-            x["id"] =originaldDraSize
+            x["id"] =originaldDtaSize
             saveurl = f'https://filmyapp-e1005.firebaseio.com/news/{category}/data/{originaldDtaSize}.json'
             saved = requests.put(saveurl, json=x)
             originaldDtaSize =originaldDtaSize + 1
