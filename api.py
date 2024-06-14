@@ -10,7 +10,7 @@ def hit():
 def savingdata(category):
     
     #get data from api
-    
+     
     url = f'https://inshortsapi.vercel.app/news?category={category}'
     res = requests.get(url)
     maindata = res.json()
@@ -20,8 +20,8 @@ def savingdata(category):
     #print(datatodb)
 
     #get data from database compare and save
-
-    dburl = f'https://filmyapp-e1005.firebaseio.com/news/{category}/data.json'
+    halfurl =https://filmyapp-e1005.firebaseio.com/news/
+    dburl = f'halfurl{category}/data.json'
     dbres = requests.get(dburl)
     datafromdb= dbres.json()
 
