@@ -1,16 +1,32 @@
 import requests 
-import json
+from easygoogletranslate import EasyGoogleTranslate
+
+
+def tr(item): 
+    translator = EasyGoogleTranslate(
+        source_language='en',
+        target_language='hi',
+        timeout=10
+    )
+    result = translator.translate(item)
+    return result
+# Output: Dies ist ein Beispiel.
+
+
+
+#import json
 
 cat = ["all", "science", "sports", "entertainment", "technology"]
+cat = ["technology"]
 def hit():
     for category in cat:
         savingdata(category)
-        
+        return "save ho gya data tumhara"
 
 def savingdata(category):
     
     #get data from api
-     
+    
     url = f'https://inshortsapi.vercel.app/news?category={category}'
     res = requests.get(url)
     maindata = res.json()
@@ -20,8 +36,8 @@ def savingdata(category):
     #print(datatodb)
 
     #get data from database compare and save
-    halfurl ="https://filmyapp-e1005.firebaseio.com/news/"
-    dburl = f'{halfurl}{category}/data.json'
+
+    dburl = f'https://filmyapp-e1005.firebaseio.com/news/{category}/data.json'
     dbres = requests.get(dburl)
     datafromdb= dbres.json()
 
@@ -37,11 +53,16 @@ def savingdata(category):
     else:
         for x in datatodb:
             x["id"] =originaldDtaSize
+            transtitle = x["title"]
+            transDesc = x['content']
+            x["title"] = tr(transtitle)
+            x["content"] = tr(transDesc)
             saveurl = f'https://filmyapp-e1005.firebaseio.com/news/{category}/data/{originaldDtaSize}.json'
             saved = requests.put(saveurl, json=x)
             originaldDtaSize =originaldDtaSize + 1
-            print(originaldDtaSize)
-        
+            #print(originaldDtaSize)
+            #print (x)
+        return "data likh diya hai ..."
         
             
             
