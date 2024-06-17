@@ -20,7 +20,7 @@ cat = ["all", "science", "sports", "entertainment", "technology"]
 def hit():
     for category in cat:
         savingdata(category)
-        return "save ho gya data tumhara"
+        
 
 def savingdata(category):
     
@@ -62,7 +62,7 @@ def savingdata(category):
             originaldDtaSize =originaldDtaSize + 1
             #print(originaldDtaSize)
             #print (x)
-        return "data likh diya hai ..."
+        
         
             
             
