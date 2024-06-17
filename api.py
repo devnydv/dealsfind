@@ -17,7 +17,6 @@ def tr(item):
 #import json
 
 cat = ["all", "science", "sports", "entertainment", "technology"]
-cat = ["technology"]
 def hit():
     for category in cat:
         savingdata(category)
