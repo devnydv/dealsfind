@@ -57,6 +57,7 @@ def savingdata(category):
             transDesc = x['content']
             x["title"] = tr(transtitle)
             x["content"] = tr(transDesc)
+            print (x["title"])
             saveurl = f'https://filmyapp-e1005.firebaseio.com/news/{category}/data/{originaldDtaSize}.json'
             saved = requests.put(saveurl, json=x)
             originaldDtaSize =originaldDtaSize + 1
