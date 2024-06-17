@@ -40,7 +40,7 @@ def detail():
 
 
 @app.route("/api")
-def api():
+def apidata():
     hit()
     return "api hit succ"
 
