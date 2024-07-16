@@ -8,3 +8,8 @@ def hitfirebase(cate):
     #print(db)
     itemdata = itemdata["items"]
     return itemdata
+
+def getdeals():
+    res= requests.get("https://inrdeals.com/ajax/deals/engine?page=1&user=bit422097711&token=")
+    data  = res.text
+    return data
