@@ -1,0 +1,33 @@
+{%extends "index.html" %}
+{%block seo %}
+<title>Grab live deals from varous websites</title>
+<meta name="description" content="Deals from amazing websites">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+<link
+    href="https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,300italic,300,700italic,900,900italic"
+    rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/css-style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/css-f69a38.css')}}">
+{%endblock%}
+    {% block content %}
+    {% include "nav.html" %}
+    <div id="mainGrid">
+       
+        <!-- item are generated dynamicaly -->
+    </div>
+    <script>
+        async function hethtml() {
+            let res = await fetch("/dealdata")
+            let data = await res.text()
+            let divtoinsert = document.getElementById("mainGrid")
+            divtoinsert.insertAdjacentHTML("afterbegin", data)
+        }
+        hethtml()
+    </script>
+
+{%endblock%}
+
