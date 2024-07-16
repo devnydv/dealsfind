@@ -38,16 +38,7 @@ def detail():
     #print(itemdata)
     return render_template("details.html", data = menudata, id=id, cate= cate, itemdata = itemdata)
 
-@app.route("/deals")
-def deals():
-   
-    return render_template("deals.html")
 
-@app.route("/dealdata", methods = ["GET", "POST"])
-def deal():
-     if request.method == "POST":
-        dealsdata = getdeals()
-        return dealsdata
 
 
 #if __name__ == "__main__":
