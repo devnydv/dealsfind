@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import os
 import json
-from hitapi import hitfirebase
+from hitapi import hitfirebase, getdeals
 from getdetails import getfirebase
 
 
