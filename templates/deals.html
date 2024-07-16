@@ -14,15 +14,7 @@
        
         <!-- item are generated dynamicaly -->
     </div>
-    <script>
-        async function hethtml() {
-            let res = await fetch("/dealdata")
-            let data = await res.text()
-            let divtoinsert = document.getElementById("mainGrid")
-            divtoinsert.insertAdjacentHTML("afterbegin", data)
-        }
-        hethtml()
-    </script>
+    
 
 {%endblock%}
 
