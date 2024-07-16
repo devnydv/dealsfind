@@ -45,7 +45,7 @@ def deals():
 
 @app.route("/dealdata", methods = ["GET", "POST"])
 def deal():
-     if request.method == "GET":
+     if request.method == "POST":
         dealsdata = getdeals()
         return dealsdata
 
