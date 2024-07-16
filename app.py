@@ -43,11 +43,11 @@ def deals():
    
     return render_template("deals.html")
 
-@app.route("/dealdata", methods= ["GET", "POST"])
+@app.route("/dealdata", methods = ["GET", "POST"])
 def deal():
      if request.method == "GET":
-     dealsdata = getdeals()
-     return dealsdata
+        dealsdata = getdeals()
+        return dealsdata
 
 
 #if __name__ == "__main__":
