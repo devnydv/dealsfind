@@ -43,8 +43,9 @@ def deals():
    
     return render_template("deals.html")
 
-@app.route("/dealdata")
+@app.route("/dealdata", methods= ["GET", "POST"])
 def deal():
+     if request.method == "GET":
      dealsdata = getdeals()
      return dealsdata
 
