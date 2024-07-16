@@ -38,5 +38,16 @@ def detail():
     #print(itemdata)
     return render_template("details.html", data = menudata, id=id, cate= cate, itemdata = itemdata)
 
+@app.route("/deals")
+def deals():
+   
+    return render_template("deals.html")
+
+@app.route("/dealdata")
+def deal():
+     dealsdata = getdeals()
+     return dealsdata
+
+
 #if __name__ == "__main__":
     #app.run(debug=True)
