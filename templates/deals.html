@@ -15,14 +15,19 @@
         <!-- item are generated dynamicaly -->
     </div>
     <script>
-        async function hethtml() {
-            let res = await fetch("/dealdata")
-            let data = await res.text()
-            let divtoinsert = document.getElementById("mainGrid")
-            divtoinsert.insertAdjacentHTML("afterbegin", data)
-        }
-        hethtml()
-    </script>
+    async function hethtml() {
+        const res = await fetch(`/dealdata`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' }, // Set the content type
+            body: { "name": "lol" } // Convert data to JSON for the body
+        });
+        data = await res.text()
+        let divtoinsert = document.getElementById("mainGrid")
+        divtoinsert.insertAdjacentHTML("afterbegin", data)
+    }
+    hethtml()
+
+</script>
 
 {%endblock%}
 
