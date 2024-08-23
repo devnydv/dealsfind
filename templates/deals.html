@@ -1,0 +1,14 @@
+{%extends "index.html" %}
+{%block seo %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+<link href="https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://inrdeals.com/css/style.css">
+<title>Lightning Deals Buy fast or Lose</title>
+<meta name="description" content="Deals find brings you lightning deals. These are limited time offers and gets expired soon.">
+{% endblock %}
+
+{%block content %}
+{% include "nav.html" %}
+{{deals |safe}}
+{% endblock %}
