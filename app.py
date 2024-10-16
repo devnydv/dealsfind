@@ -7,6 +7,7 @@ from hitapi import hitfirebase, getdeals
 from getdetails import getfirebase
 
 
+
 f = open("data.json", "r")
 menudata= f.read()
 menudata = json.loads(menudata)
